@@ -1,0 +1,66 @@
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.productsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin: 20px;
+  border: 1px solid darkgrey;
+  border-radius: 16px;
+}
+
+.productImage {
+  width: 300px;
+  height: 300px;
+}
+
+.descriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid darkgrey;
+  margin-top: 15px;
+}
+
+.itemName{
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+}
+
+.itemDescription{
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.itemPrice {
+  font-family: Roboto Medium, sans-serif;
+  font-size: 25px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  background: #00a152;
+  cursor: pointer;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  &:hover{
+    background: rgba(0, 161, 82, 0.8);
+  }
+}
+
+.btnText {
+  color: whitesmoke;
+  font-family: Roboto Medium, sans-serif, serif;
+  font-size: 20px;
+}

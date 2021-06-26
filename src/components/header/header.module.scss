@@ -1,0 +1,40 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid darkgrey;
+  align-items: center;
+  position: relative;
+
+  &:hover {
+    .cartInfo {
+      right: 40px;
+    }
+  }
+}
+
+.bag {
+  z-index: 10;
+}
+
+.img {
+  width: 40px;
+}
+
+.navLink {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+
+.cartInfo {
+  position: absolute;
+  right: -210px;
+  padding: 0 10px;
+  transition: right .5s linear;
+  z-index: 0;
+}
+
+.orderInfo {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
