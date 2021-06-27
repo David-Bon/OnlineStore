@@ -4,16 +4,11 @@
   border-bottom: 2px solid darkgrey;
   align-items: center;
   position: relative;
-
-  &:hover {
-    .cartInfo {
-      right: 40px;
-    }
-  }
 }
 
 .bag {
   z-index: 10;
+  user-select: none;
 }
 
 .img {
@@ -28,9 +23,8 @@
 
 .cartInfo {
   position: absolute;
-  right: -210px;
+  right: 40px;
   padding: 0 10px;
-  transition: right .5s linear;
   z-index: 0;
 }
 

@@ -3,6 +3,9 @@
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 30px;
+  &:nth-child(8) {
+    justify-content: flex-start;
+  }
 }
 
 .productsList {
@@ -18,6 +21,7 @@
 .productImage {
   width: 300px;
   height: 300px;
+  user-select: none;
 }
 
 .descriptionWrapper {
@@ -28,12 +32,12 @@
   margin-top: 15px;
 }
 
-.itemName{
+.itemName {
   font-family: Roboto, sans-serif;
   font-size: 24px;
 }
 
-.itemDescription{
+.itemDescription {
   font-family: Roboto, sans-serif;
   font-size: 18px;
   text-align: center;
@@ -54,7 +58,8 @@
   cursor: pointer;
   border-radius: 16px;
   margin-bottom: 10px;
-  &:hover{
+
+  &:hover {
     background: rgba(0, 161, 82, 0.8);
   }
 }
@@ -63,4 +68,5 @@
   color: whitesmoke;
   font-family: Roboto Medium, sans-serif, serif;
   font-size: 20px;
+  user-select: none;
 }

@@ -9,16 +9,16 @@ const Header = ({ total, totalCount }) => {
             <NavLink className={styles.navLink} to="/products">Store</NavLink>
             <div className={styles.cartInfo}>
                 <p className={styles.orderInfo}>
-                    Items in cart: {totalCount} ($ {!total ? '0' : total})
+                    {totalCount === 0 ? 'Your cart is empty' : `${totalCount} Items in cart: ($ ${total})`}
                 </p>
             </div>
             <div className={styles.bag}>
-            <NavLink to="/cart">
-                {
-                    <img className={styles.img} src="https://image.flaticon.com/icons/png/512/82/82632.png"
-                         alt=""/>
-                }
-            </NavLink>
+                <NavLink to="/cart">
+                    {
+                        <img className={styles.img} src="https://image.flaticon.com/icons/png/512/82/82632.png"
+                             alt=""/>
+                    }
+                </NavLink>
             </div>
         </div>
     )

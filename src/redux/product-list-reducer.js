@@ -18,7 +18,6 @@ let
     }
 
 export const ProductReducer = (state = InitialState, action) => {
-    debugger
     switch (action.type) {
         case ON_FETCH_PRODUCTS:
             return {
