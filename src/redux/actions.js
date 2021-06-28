@@ -60,7 +60,7 @@ const DispatchCartItems = (updatedState) => {
 
 export const SetInputValues = (name, surname, address, phone, cartItems) => ({
     type: SET_INPUT_VALUES,
-    payload: {name, surname, address, phone, TotalOrder: cartItems}
+    payload: {name, surname, address, phone, cartItems}
 });
 
 export const OnFetchProducts = (products) => ({
